@@ -16,32 +16,32 @@
     <Button
         style="@style/project_one_to_four_styles"
         android:text="@string/project_1"
-        android:onClick="showProjectOneMessage"
+        android:onClick="showProject"
         />
 
     <Button
         style="@style/project_one_to_four_styles"
         android:text="@string/project_2"
-        android:onClick="showProjectTwoMessage"
+        android:onClick="showProject"
         />
 
 
     <Button
         style="@style/project_one_to_four_styles"
         android:text="@string/project_3"
-        android:onClick="showProjectThreeMessage"
+        android:onClick="showProject"
         />
 
     <Button
         style="@style/project_one_to_four_styles"
         android:text="@string/project_4"
-        android:onClick="showProjectFourMessage"
+        android:onClick="showProject"
         />
 
     <Button
         style="@style/capstone_project"
         android:text="@string/project_5"
-        android:onClick="showProjectFiveMessage"
+        android:onClick="showProject"
         />
 
 

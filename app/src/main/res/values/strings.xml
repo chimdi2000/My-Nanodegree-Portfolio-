@@ -9,5 +9,6 @@
     <string name="project_3">Build it BIgger</string>
     <string name="project_4">XYZ Reader</string>
     <string name="project_5">Capstone Project</string>
+    <string name="opens_app">This button opens the app </string>
 
 </resources>
