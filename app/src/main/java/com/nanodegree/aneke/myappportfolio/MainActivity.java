@@ -1,6 +1,7 @@
 package com.nanodegree.aneke.myappportfolio;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -43,30 +44,15 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showProjectOneMessage(View view){
+    public void showProject(View view){
 
-        Toast.makeText(this.getApplicationContext(),"This button will launch project: Spotify Streamer",Toast.LENGTH_LONG).show();
-    }
+        Button button = (Button) view;
 
-    public void showProjectTwoMessage(View view){
+        Context context= this.getApplicationContext();
+        CharSequence message = getString(R.string.opens_app) + button.getText();
+        int duration = Toast.LENGTH_SHORT;
 
-        Toast.makeText(this.getApplicationContext(),"This button will launch project: Super Duo",Toast.LENGTH_LONG).show();
-    }
-
-    public void showProjectThreeMessage(View view){
-
-        Toast.makeText(this.getApplicationContext(),"This button will launch project: Build it Bigger",Toast.LENGTH_LONG).show();
-    }
-
-
-    public void showProjectFourMessage(View view){
-
-        Toast.makeText(this.getApplicationContext(),"This button will launch project: XYZ Reader",Toast.LENGTH_LONG).show();
-    }
-
-    public void showProjectFiveMessage(View view){
-
-        Toast.makeText(this.getApplicationContext(),"This button will launch project: Capstone Project",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,message,duration).show();
     }
 
 
